@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goodgames</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #bebebe;
+        }
+
+        .game-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .game-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .game-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .game-card h3 {
+            color: #444;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 0.25px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Game Library</h1>
+</header>
+
+<nav>
+    <a href="http://localhost:5000/#">Home</a>
+    <a href="#">Browse Games</a>
+    <a href="http://localhost:5000/library">My Library</a>
+    <a href="#">About</a>
+</nav>
+
+<section>
+    <h2>My Games</h2>
+    <div class="game-list">
+        <div class="game-card">
+            <img src="https://via.placeholder.com/150" alt="Game Cover">
+            <h3>Game Title 1</h3>
+            <p>Genre: Action</p>
+        </div>
+        <div class="game-card">
+            <img src="https://via.placeholder.com/150" alt="Game Cover">
+            <h3>Game Title 2</h3>
+            <p>Genre: RPG</p>
+        </div>
+        <div class="game-card">
+            <img src="https://via.placeholder.com/150" alt="Game Cover">
+            <h3>Game Title 3</h3>
+            <p>Genre: Adventure</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 My Game Library. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
